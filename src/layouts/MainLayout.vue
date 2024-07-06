@@ -24,14 +24,33 @@
       <q-list>
         <q-item-label header>Menu</q-item-label>
 
-        <q-item to="/products" class="text-purple">
+        <q-item to="/welcome" class="text-purple">
+          <q-item-section avatar>
+            <q-icon name="home" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Inicio</q-item-label>
+          </q-item-section>
+        </q-item>
+
+        <q-item to="/adduser" class="text-purple">
+          <q-item-section avatar>
+            <q-icon name="edit" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Craer Nuevo Usuario</q-item-label>
+          </q-item-section>
+        </q-item>
+
+        <q-item to="/publicarActividades" class="text-purple">
           <q-item-section avatar>
             <q-icon name="store" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>Productos</q-item-label>
+            <q-item-label>Agregar Nueva Actividad</q-item-label>
           </q-item-section>
         </q-item>
+
         <q-item to="/changePass" class="text-purple">
           <q-item-section avatar>
             <q-icon name="settings" />

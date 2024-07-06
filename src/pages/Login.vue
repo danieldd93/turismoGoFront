@@ -117,7 +117,7 @@ export default {
           });*/
           localStorage.setItem("userData", JSON.stringify(response.data));
           //this.$router.push("/products");
-          this.$router.push("/products");
+          this.$router.push("/welcome");
         })
         .catch((error) => {
           console.log(JSON.stringify(error));
