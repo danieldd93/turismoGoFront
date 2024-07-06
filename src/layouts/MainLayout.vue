@@ -38,7 +38,7 @@
             <q-icon name="edit" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>Craer Nuevo Usuario</q-item-label>
+            <q-item-label>Registrar Nuevo Usuario</q-item-label>
           </q-item-section>
         </q-item>
 

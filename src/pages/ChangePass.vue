@@ -2,7 +2,7 @@
   <q-page padding>
     <q-card>
       <q-card-section>
-        <div class="text-h6" color="green">Cambiar Contraseña</div>
+        <div class="text-h6" color="green">Cambiar Password</div>
       </q-card-section>
 
       <q-card-section>
@@ -92,4 +92,8 @@ export default {
 
 <style scoped>
 /* Estilos específicos para este componente */
+.q-page {
+  max-width: 600px;
+  margin: 0 auto;
+}
 </style>
