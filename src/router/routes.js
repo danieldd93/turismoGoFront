@@ -39,6 +39,14 @@ const routes = [
   },
 
   {
+    path: "/dashboard",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [
+      { path: "", component: () => import("pages/DashboardPage.vue") },
+    ],
+  },
+
+  {
     path: "/adduser",
     component: () => import("layouts/MainLayout.vue"),
     children: [{ path: "", component: () => import("pages/NewUser.vue") }],

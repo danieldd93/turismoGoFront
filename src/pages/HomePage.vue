@@ -26,7 +26,7 @@
         <q-select
           filled
           v-model="location"
-          label="Seleccionar una ubicación"
+          label="Seleccionar una actividad"
           use-input
           input-debounce="300"
           :options="filteredLocations"
@@ -214,7 +214,7 @@ export default {
         "Night Hiking": "public/images/Night Hiking.jpeg",
         "Photo Safari": "public/images/Photo Safari.jpg",
       };
-      return images[activityName] || "path/to/default_image.jpg";
+      return images[activityName] || "public/images/Photo Safari.jpg";
     },
     fetchActivities() {
       axios
