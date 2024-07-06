@@ -145,12 +145,19 @@ export default {
   },
   methods: {
     search() {
-      console.log(
-        "Search called with",
-        this.location,
-        this.category,
-        this.persons
+      const selectedActivity = this.activities.find(
+        (activity) => activity.location === this.location
       );
+      if (selectedActivity) {
+        this.$router.push({
+          path: "/activityDetail",
+          query: {
+            activityId: selectedActivity.id,
+          },
+        });
+      } else {
+        console.error("No activity found for the selected location");
+      }
     },
     filterLocations(val, update, abort) {
       console.log("Filtering locations with value:", val);

@@ -48,6 +48,17 @@ const routes = [
     ],
   },
   {
+    path: "/activityDetail",
+    component: () => import("layouts/IndexLayout.vue"),
+    children: [
+      {
+        path: "",
+        component: () => import("pages/activityDetailPage.vue"),
+        name: "activityDetail",
+      },
+    ],
+  },
+  {
     path: "/:catchAll(.*)*",
     component: () => import("pages/Error404.vue"),
   },
