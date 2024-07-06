@@ -44,7 +44,7 @@ const routes = [
     path: "/publicarActividades",
     component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: "", component: () => import("pages/PublishActivityPage.vue") },
+      { path: "", component: () => import("components/PublishActivity.vue") },
     ],
   },
   {
