@@ -79,7 +79,7 @@
             />
           </q-btn>
         </div>
-        <div class="q-mt-md text-center">O registrate manualmente</div>
+
         <q-btn
           flat
           label="REGISTRARSE"
@@ -118,7 +118,7 @@ export default {
           localStorage.setItem("userData", JSON.stringify(response.data));
           //this.$router.push("/products");
           //this.$router.push("/publicarActividades");
-          this.$router.push("/welcome");
+          this.$router.push("/publicarActividades");
         })
         .catch((error) => {
           console.log(JSON.stringify(error));
@@ -130,7 +130,24 @@ export default {
     },
     onSignUp() {
       // Handle sign up logic
-      alert("Sign Up clicked");
+      let URL = "/User/SignUp";
+      this.$api
+        .post(URL, this.user)
+        .then((response) => {
+          /*this.$q.notify({
+            message: "Bienvenido....",
+            color: "positive",
+            position: "bottom",
+            timeout: 5000,
+          });*/
+          localStorage.setItem("userData", JSON.stringify(response.data));
+          //this.$router.push("/products");
+          //this.$router.push("/publicarActividades");
+          this.$router.push("/adduser");
+        })
+        .catch((error) => {
+          console.log(JSON.stringify(error));
+        });
     },
   },
 };
