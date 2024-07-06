@@ -4,7 +4,7 @@
       <q-toolbar>
         <q-btn flat round dense icon="menu" @click="toggleLeftDrawer" />
         <q-toolbar-title>
-          <img src="public/images/logo.png" alt="TurismoGO" height="50px" />
+          <img src="public/images/Logo.png" alt="TurismoGO" height="50px" />
           TurismoGO
         </q-toolbar-title>
         <q-btn flat label="Inicio" @click="navigateTo('home')" />
