@@ -1,1 +1,42 @@
 // app global css in SCSS form
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #b524e6 0%, #641695 100%);
+}
+
+.login-card {
+  background: rgba(255, 255, 255, 1);
+  border-radius: 15px;
+  padding: 2rem;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.q-input__inner {
+  color: #000;
+}
+
+.q-input__inner:focus,
+.q-input__inner:active,
+.q-input__inner {
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+.q-img-cover {
+  height: 200px;
+}
+
+.bg-red-3 {
+  background-color: #ef5350 !important;
+}
+
+body {
+  background-color: white;
+}

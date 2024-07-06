@@ -9,9 +9,14 @@
           />
         </div>
         <q-avatar size="80px" class="q-mb-md">
-          <q-icon name="person" size="56px" color="red" />
+          <q-icon name="person" size="56px" color="purple" />
         </q-avatar>
-        <div style="font-size: 1.5em;color:black;font-weight: 100" class="text-center">Login</div>
+        <div
+          style="font-size: 1.5em; color: black; font-weight: 100"
+          class="text-center"
+        >
+          Login
+        </div>
       </q-card-section>
       <q-card-section>
         <q-form @submit="onSubmit">
@@ -22,7 +27,7 @@
             dense
             class="q-mb-md"
             prepend-inner-icon="account_circle"
-            color="red"
+            color="purple"
             required
           />
           <q-input
@@ -33,21 +38,21 @@
             dense
             class="q-mb-md"
             prepend-inner-icon="lock"
-            color="red"
+            color="purple"
             required
           />
           <div class="text-center q-mb-md">
             <q-btn
               flat
               label="Se olvido la contraseña ?"
-              color="red"
+              color="purple"
               @click="onForgotPassword"
             />
           </div>
           <q-btn
             type="submit"
             icon="login"
-            color="red"
+            color="purple"
             label="Entrar"
             class="full-width q-mb-md"
             unelevated
@@ -77,7 +82,7 @@
         <q-btn
           flat
           label="REGISTRARSE"
-          color="red"
+          color="purple"
           class="q-mt-md full-width"
           @click="onSignUp"
         />
@@ -114,34 +119,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.login-page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: linear-gradient(135deg, #ff6f61 0%, #d32f2f 100%);
-}
-
-.login-card {
-  background: rgba(255, 255, 255, 1);
-  border-radius: 15px;
-  padding: 2rem;
-  max-width: 400px;
-  width: 100%;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.q-input__inner {
-  color: #000;
-}
-
-.q-input__inner:focus,
-.q-input__inner:active,
-.q-input__inner {
-  border-color: rgba(0, 0, 0, 0.3);
-}
-</style>
+<style scoped></style>

@@ -1,6 +1,6 @@
 <template>
   <q-layout view="hHh lpR fFf">
-    <q-header class="bg-red-8 text-white">
+    <q-header class="bg-purple text-white">
       <q-toolbar>
         <q-btn
           flat
@@ -11,9 +11,7 @@
           @click="toggleLeftDrawer"
           class="text-white"
         />
-        <q-toolbar-title>
-          Wong
-        </q-toolbar-title>
+        <q-toolbar-title> TurismoGO </q-toolbar-title>
       </q-toolbar>
     </q-header>
 
@@ -26,7 +24,7 @@
       <q-list>
         <q-item-label header>Menu</q-item-label>
 
-        <q-item to="/products" class="text-red">
+        <q-item to="/products" class="text-purple">
           <q-item-section avatar>
             <q-icon name="store" />
           </q-item-section>
@@ -44,12 +42,12 @@
             <q-item-label>Salir</q-item-label>
           </q-item-section>
         </q-item>
-        
+
         <!-- Añadir más elementos de menú según sea necesario -->
       </q-list>
     </q-drawer>
 
-    <q-page-container class="bg-red-1 text-dark">
+    <q-page-container class="text-dark">
       <router-view />
     </q-page-container>
   </q-layout>
@@ -57,34 +55,26 @@
 
 <script>
 export default {
-  name: 'MainLayout',
+  name: "MainLayout",
   data() {
     return {
-      leftDrawerOpen: false
-    }
+      leftDrawerOpen: false,
+    };
   },
   methods: {
     toggleLeftDrawer() {
-      this.leftDrawerOpen = !this.leftDrawerOpen
+      this.leftDrawerOpen = !this.leftDrawerOpen;
     },
     logout() {
       // Redirigir al usuario a la página de login
-      this.$router.push('/login');
-    }
-  }
-}
+      this.$router.push("/login");
+    },
+  },
+};
 </script>
 
 <style scoped>
-.bg-red-8 {
-  background-color: #C62828 !important;
-}
-
-.bg-red-2 {
-  background-color: #FFCDD2 !important;
-}
-
-.bg-red-1 {
-  background-color: #FFEBEE !important;
+.bg-purple-8 {
+  background-color: #9c28c6 !important;
 }
 </style>
