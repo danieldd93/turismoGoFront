@@ -214,7 +214,7 @@ export default {
         "Night Hiking": "public/images/Night Hiking.jpeg",
         "Photo Safari": "public/images/Photo Safari.jpg",
       };
-      return images[activityName] || "path/to/default_image.jpg";
+      return images[activityName] || "public/images/Photo Safari.jpg";
     },
     fetchActivities() {
       axios
