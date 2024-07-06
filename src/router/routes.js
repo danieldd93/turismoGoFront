@@ -14,6 +14,11 @@ const routes = [
     children: [{ path: "", component: () => import("pages/Products.vue") }],
   },
   {
+    path: "/changePass",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [{ path: "", component: () => import("pages/ChangePass.vue") }],
+  },
+  {
     path: "/homepage",
     component: () => import("layouts/IndexLayout.vue"),
     children: [

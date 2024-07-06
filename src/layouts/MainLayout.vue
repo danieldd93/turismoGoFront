@@ -32,6 +32,14 @@
             <q-item-label>Productos</q-item-label>
           </q-item-section>
         </q-item>
+        <q-item to="/changePass" class="text-purple">
+          <q-item-section avatar>
+            <q-icon name="settings" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Cambiar Password</q-item-label>
+          </q-item-section>
+        </q-item>
 
         <!-- Botón de Salir -->
         <q-item clickable @click="logout">
