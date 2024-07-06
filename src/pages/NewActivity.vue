@@ -26,7 +26,7 @@
         type="date"
         required
       />
-      <q-btn type="submit" label="Registrar" color="primary" />
+      <q-btn type="submit" label="Registrar" color="deep-purple" />
     </q-form>
   </q-page>
 </template>
@@ -48,7 +48,7 @@ export default {
   },
   methods: {
     async onSubmit() {
-      await axios.post("/api/activities", this.activity);
+      await axios.post("/api/v1/Activity", this.activity);
       this.$router.push("/activities");
     },
   },
