@@ -6,7 +6,7 @@ const routes = [
   {
     path: "/login",
     component: () => import("layouts/LoginLayout.vue"),
-    children: [{ path: "", component: () => import("pages/Login.vue") }],
+    children: [{ path: "", component: () => import("pages/Login2.vue") }],
   },
   {
     path: "/products",
@@ -19,6 +19,13 @@ const routes = [
     children: [
       { path: "", component: () => import("pages/HomePage.vue"), name: "home" },
       // Agrega otras rutas aquí
+    ],
+  },
+  {
+    path: "/publicarActividades",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [
+      { path: "", component: () => import("pages/PublishActivityPage.vue") },
     ],
   },
   {
