@@ -117,6 +117,7 @@ export default {
           });*/
           localStorage.setItem("userData", JSON.stringify(response.data));
           //this.$router.push("/products");
+          //this.$router.push("/publicarActividades");
           this.$router.push("/publicarActividades");
         })
         .catch((error) => {
@@ -141,7 +142,7 @@ export default {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(135deg, #ff6f61 0%, #d32f2f 100%);
+  background: linear-gradient(135deg, #d974be 0%, #6e0460 100%);
 }
 
 .login-card {

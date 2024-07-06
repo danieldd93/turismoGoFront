@@ -75,7 +75,8 @@ export default {
     },
     logout() {
       // Redirigir al usuario a la página de login
-      this.$router.push("/login");
+      //this.$router.push("/login");
+      this.$router.push("/homepage");
     },
   },
 };
