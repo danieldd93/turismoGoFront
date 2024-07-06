@@ -7,7 +7,7 @@
           <img src="public/images/Logo.png" alt="TurismoGO" height="50px" />
           TurismoGO
         </q-toolbar-title>
-        <q-btn flat label="Inicio" @click="navigateTo('home')" />
+        <q-btn flat label="Inicio" @click="navigateTo('homepage')" />
         <q-btn flat label="Sobre Nosotros" @click="navigateTo('about')" />
         <q-btn flat label="Destinos" @click="navigateTo('destinations')" />
         <q-btn

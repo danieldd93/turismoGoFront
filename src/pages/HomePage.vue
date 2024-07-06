@@ -26,7 +26,7 @@
         <q-select
           filled
           v-model="location"
-          label="Seleccionar una ubicación"
+          label="Seleccionar una actividad"
           use-input
           input-debounce="300"
           :options="filteredLocations"
