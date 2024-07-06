@@ -26,7 +26,7 @@
 
     <q-footer class="bg-grey-8 text-white" elevated>
       <q-toolbar>
-        <q-toolbar-title>
+        <q-toolbar-title class="text-center">
           <span>© 2024 TurismoGO</span>
         </q-toolbar-title>
       </q-toolbar>
