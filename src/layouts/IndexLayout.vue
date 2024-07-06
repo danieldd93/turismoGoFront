@@ -4,7 +4,8 @@
       <q-toolbar>
         <q-btn flat round dense icon="menu" @click="toggleLeftDrawer" />
         <q-toolbar-title>
-          <img src="path/to/logo.png" alt="TurismoGO" height="42px" />
+          <img src="public/images/logo.png" alt="TurismoGO" height="50px" />
+          TurismoGO
         </q-toolbar-title>
         <q-btn flat label="Inicio" @click="navigateTo('home')" />
         <q-btn flat label="Sobre Nosotros" @click="navigateTo('about')" />
@@ -15,7 +16,7 @@
           @click="navigateTo('companies')"
         />
         <q-space />
-        <q-btn flat label="Iniciar Sesión" @click="navigateTo('login')" />
+        <q-btn flat label="Iniciar Sesión" @click="navigateTo('/login')" />
       </q-toolbar>
     </q-header>
 
@@ -44,8 +45,8 @@ export default {
     toggleLeftDrawer() {
       this.$q.drawer.toggle();
     },
-    navigateTo(page) {
-      this.$router.push({ name: page });
+    navigateTo(path) {
+      this.$router.push({ path });
     },
   },
 };
