@@ -24,14 +24,15 @@
       <q-list>
         <q-item-label header>Menu</q-item-label>
 
-        <q-item to="/products" class="text-purple">
+        <q-item to="/publicarActividades" class="text-purple">
           <q-item-section avatar>
             <q-icon name="store" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>Productos</q-item-label>
+            <q-item-label>Agregar Nueva Actividad</q-item-label>
           </q-item-section>
         </q-item>
+
         <q-item to="/changePass" class="text-purple">
           <q-item-section avatar>
             <q-icon name="settings" />
