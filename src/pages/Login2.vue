@@ -143,7 +143,7 @@ export default {
           localStorage.setItem("userData", JSON.stringify(response.data));
           //this.$router.push("/products");
           //this.$router.push("/publicarActividades");
-          this.$router.push("/adduser");
+          this.$router.push("/adduser_");
         })
         .catch((error) => {
           console.log(JSON.stringify(error));

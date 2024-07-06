@@ -52,6 +52,11 @@ const routes = [
     children: [{ path: "", component: () => import("pages/NewUser.vue") }],
   },
   {
+    path: "/adduser_",
+    component: () => import("layouts/LoginLayout.vue"),
+    children: [{ path: "", component: () => import("pages/NewUser.vue") }],
+  },
+  {
     path: "/homepage",
     component: () => import("layouts/IndexLayout.vue"),
     children: [
