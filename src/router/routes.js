@@ -33,6 +33,17 @@ const routes = [
     children: [{ path: "", component: () => import("pages/ChangePass.vue") }],
   },
   {
+    path: "/welcome",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [{ path: "", component: () => import("pages/Welcome.vue") }],
+  },
+
+  {
+    path: "/adduser",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [{ path: "", component: () => import("pages/NewUser.vue") }],
+  },
+  {
     path: "/homepage",
     component: () => import("layouts/IndexLayout.vue"),
     children: [
