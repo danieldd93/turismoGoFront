@@ -2,7 +2,7 @@
   <q-page padding>
     <q-card>
       <q-card-section>
-        <div class="text-h6" color="green">Agregar Nuevo Usuario</div>
+        <div class="text-h6" color="green">Registrar Nuevo Usuario</div>
       </q-card-section>
 
       <q-card-section>

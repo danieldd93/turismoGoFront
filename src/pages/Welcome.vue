@@ -1,7 +1,7 @@
 <template>
   <q-page class="flex">
     <q-card class="q-mb-md" style="width: 100%">
-      <q-card-section>
+      <q-card-section class="text-center">
         <div class="text-h4 q-mb-md" color="primary">
           ¡Bienvenido a TourismGo!
         </div>
