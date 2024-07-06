@@ -9,6 +9,13 @@
         <q-form @submit="handleSubmit" @reset="resetForm">
           <q-input v-model="username" label="Usuario" filled readonly />
           <q-input
+            v-model="currentPassword"
+            type="password"
+            label="Contraseña Actual"
+            filled
+            :rules="[(val) => !!val || 'Campo requerido']"
+          />
+          <q-input
             v-model="newPassword"
             type="password"
             label="Nueva Contraseña"
@@ -16,7 +23,11 @@
             :rules="[(val) => !!val || 'Campo requerido']"
           />
           <div class="q-mt-md">
-            <q-btn label="Cambiar Contraseña" type="submit" color="warning" />
+            <q-btn
+              label="Cambiar Contraseña"
+              type="submit"
+              color="deep-purple"
+            />
             <q-btn label="Resetear" type="reset" color="secondary" flat />
           </div>
         </q-form>
@@ -39,6 +50,7 @@ export default {
   data() {
     return {
       username: "",
+      currentPassword: "",
       newPassword: "",
       message: "",
       success: false,
@@ -54,10 +66,14 @@ export default {
   methods: {
     async handleSubmit() {
       try {
-        const response = await axios.post("/api/change-password", {
-          username: this.username,
+        //const response = await axios
+        let URL = "/User/ChangePassword";
+        this.$api.post(URL, {
+          email: this.username,
+          currentPassword: this.currentPassword,
           newPassword: this.newPassword,
         });
+
         this.message = "Contraseña cambiada con éxito.";
         this.success = true;
         this.resetForm();
@@ -67,7 +83,7 @@ export default {
       }
     },
     resetForm() {
-      this.username = "";
+      this.currentPassword = "";
       this.newPassword = "";
     },
   },
