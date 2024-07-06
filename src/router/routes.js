@@ -11,7 +11,21 @@ const routes = [
   {
     path: "/products",
     component: () => import("layouts/MainLayout.vue"),
-    children: [{ path: "", component: () => import("pages/Products.vue") }],
+    children: [
+      { path: "", component: () => import("pages/Products.vue") },
+      {
+        path: "/history/:userId",
+        component: () => import("pages/UserHistory.vue"),
+      },
+      {
+        path: "/activity/:activityId/users",
+        component: () => import("pages/ActivityUsers.vue"),
+      },
+      {
+        path: "/new-activity",
+        component: () => import("pages/NewActivity.vue"),
+      },
+    ],
   },
   {
     path: "/changePass",
