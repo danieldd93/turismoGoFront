@@ -32,6 +32,14 @@
             <q-item-label>Inicio</q-item-label>
           </q-item-section>
         </q-item>
+        <q-item to="/dashboard" class="text-purple">
+          <q-item-section avatar>
+            <q-icon name="dashboard" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Dashboard</q-item-label>
+          </q-item-section>
+        </q-item>
 
         <q-item to="/adduser" class="text-purple">
           <q-item-section avatar>
